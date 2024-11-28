@@ -1,13 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>page title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up yuri web </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #444242;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(87, 87, 87);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            animation: bounce 1s ease-in-out infinite alternate;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            opacity: 0;
+            animation: fadeInLabel 1s ease-in forwards;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #3a2a2a;
+            opacity: 0;
+            animation: fadeInInput 1s ease-in forwards;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #9c9c9c;
+            color: rgb(99, 51, 51);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #ffffff;
+        }
+
+        .form-group input[type="submit"]:focus {
+            outline: none;
+        }
+
+        .form-group input[type="submit"]:active {
+            transform: scale(0.98);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #828488;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .form-footer a:hover {
+            color: #989faf;
+        }
+
+        @keyframes fadeInLabel {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInInput {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
 </head>
 <body>
 
-<h1 style="color: red;">Created by YURI</h1>
-<p style="-color: ;">Im hamza hamdi i 16yo gamer and programer folow my insta :tavn.shi</p>
-
-<body>
-<h1 style="color: blue;">riot id :G U T S #rep </h1>
-<p>enjoying in my website</p>
+    <div class="container">
+        <h2>Sign Up for yuri web </h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <div class="form-footer">
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <p1>to be continue !!!!!!</p1>
+        </div>
+    </div>
+</body>
+</html>
