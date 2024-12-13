@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Adorable Flower</title>
+    <h1>THIS IS FOR U MY LADY "FATMA" </h1>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0f7fa; /* Light, soft background color */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .flower {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            transform: rotate(45deg); /* A slight rotation for a lively look */
+        }
+
+        .petal {
+            position: absolute;
+            width: 100px;
+            height: 160px;
+            background: linear-gradient(135deg, #ff7f7f, #ffb3b3); /* Soft gradient for petals */
+            border-radius: 50% 50% 0 0; /* Rounded top with a curved bottom */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow to add depth */
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Positioning the petals around the center */
+        .petal:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        .petal:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(60deg);
+        }
+
+        .petal:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(120deg);
+        }
+
+        .petal:nth-child(4) {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        .petal:nth-child(5) {
+            transform: translate(-50%, -50%) rotate(240deg);
+        }
+
+        .petal:nth-child(6) {
+            transform: translate(-50%, -50%) rotate(300deg);
+        }
+
+        .center {
+            position: absolute;
+            width: 120px; /* Slightly larger center for balance */
+            height: 120px;
+            background-color: #ffec40; /* Bright, cheerful yellow */
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Soft glow to make it pop */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for the flower's center to make it more interactive */
+        .center:hover {
+            box-shadow: 0 8px 40px rgba(255, 204, 0, 0.5);
+            transform: translate(-50%, -50%) scale(1.1); /* Slightly grow the center */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flower">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="center"></div>
+    </div>
+
+</body>
+</html>
+
